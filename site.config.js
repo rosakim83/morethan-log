@@ -30,6 +30,7 @@ const CONFIG = {
 
   // notion configuration (required)
   notionConfig: {
+    // @ts-ignore
     pageId: process.env.NOTION_PAGE_ID,
   },
 
@@ -37,24 +38,28 @@ const CONFIG = {
   googleAnalytics: {
     enable: false,
     config: {
+      // @ts-ignore
       measurementId: process.env.NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID || "",
     },
   },
   googleSearchConsole: {
     enable: false,
     config: {
+      // @ts-ignore
       siteVerification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "",
     },
   },
   naverSearchAdvisor: {
     enable: false,
     config: {
+      // @ts-ignore
       siteVerification: process.env.NEXT_PUBLIC_NAVER_SITE_VERIFICATION || "",
     },
   },
   utterances: {
     enable: false,
     config: {
+      // @ts-ignore
       repo: process.env.NEXT_PUBLIC_UTTERANCES_REPO || "",
       "issue-term": "og:title",
       label: "💬 Utterances",
@@ -67,6 +72,7 @@ const CONFIG = {
       appid: "", // Embed Code -> data-app-id value
     },
   },
+  // @ts-ignore
   isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
   revalidateTime: 21600 * 7, // revalidate time for [slug], index
 }
