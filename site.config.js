@@ -3,8 +3,8 @@ const CONFIG = {
   profile: {
     name: "rose",
     image: "/profile.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
-    role: "M.S. Department of Applied Artificial Intelligence",
-    bio: "도비의 대학원 탈출일기...",
+    role: "M.S. Applied AI",
+    bio: "AI, DL, Vision, Multimodal 관련 랩에서 공부하고 있는 석사생입니다. 도비는 탈출하고 싶어요...",
     email: "hyobinkim@gmail.com",
     linkedin: "hyobin-kim-0993ab1b1",
     github: "rosakim83",
@@ -36,7 +36,7 @@ const CONFIG = {
 
   // plugin configuration (optional)
   googleAnalytics: {
-    enable: false,
+    enable: true,
     config: {
       // @ts-ignore
       measurementId: process.env.NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID || "",
@@ -57,7 +57,7 @@ const CONFIG = {
     },
   },
   utterances: {
-    enable: false,
+    enable: true,
     config: {
       // @ts-ignore
       repo: process.env.NEXT_PUBLIC_UTTERANCES_REPO || "",
